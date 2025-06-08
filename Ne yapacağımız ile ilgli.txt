@@ -1,0 +1,80 @@
+🎯 PROJENİN ADI:
+Multithreaded Web Server Log Analyzer
+(C++ ve POSIX thread’lerle gerçek log verisini işleyen, eş zamanlı çalışan bir analiz uygulaması)
+
+📌 1. Bu Proje Ne İşe Yarar?
+➤ Gerçek dünya loglarını çok hızlı analiz etmeye yarar.
+Web sunucuları (Apache, Nginx gibi) her HTTP isteğini bir .log dosyasına kaydeder. Bu dosya binlerce hatta milyonlarca satır olabilir.
+
+Senin uygulaman bu satırları:
+
+Çoklu iş parçacığı (thread) ile paralel şekilde işler
+
+İstatistiksel analiz yapar:
+
+Hangi IP'ler en sık bağlandı?
+
+En çok hangi sayfalar istendi?
+
+Trafik en yoğun hangi saatlerdeydi?
+
+Hatalı istekler (404, 500) ne sıklıkta oluştu?
+
+➤ Büyük veriyle uğraşan sistemlerde analiz hızı kritiktir.
+Tek thread = yavaş
+
+Multi-thread = verimli kaynak kullanımı (özellikle çok çekirdekli sistemlerde)
+
+🧠 2. Neden Önemli?
+✅ a) Sistem Mühendisliğinin Kalbine Dokunuyor
+İşletim sistemlerinde öğrendiğin thread, mutex, I/O, race condition gibi kavramları doğrudan uygulamalı olarak kullanıyorsun.
+
+Bu projede OS konularını “kuru teori” olmaktan çıkarıyorsun.
+
+✅ b) Performans Mühendisliği Bilinci Kazandırır
+“Kod yazdım” değil, “ne kadar hızlı ve verimli çalışıyor?” diye sorguluyorsun.
+
+Log dosyası büyükse, işlem süresi, CPU kullanımı, thread sayısı gibi parametreleri karşılaştırabilirsin.
+
+✅ c) Gerçek Mülakat Sorularına Hazırlık
+Mülakatlarda sıkça gelen sorulardan biri şudur:
+“Elinde büyük bir log dosyası var, bunu paralel işlemek istesen nasıl yaparsın?”
+Bu projeyle:
+
+thread kullanımı
+
+mutex ile senkronizasyon
+
+Girdi okuma/parçalama
+
+Ortak veriye güvenli erişim gibi soruları “ben yaptım” diyerek cevaplayabilirsin.
+
+✅ d) CV’de Teknik Güç Gösterisi
+Bu proje sana şunu kazandırır:
+
+“Ben sadece uygulama yazmıyorum, sistem seviyesi işlemlerle de ilgileniyorum. Performans, concurrency ve gerçek dünya verisini yönetebiliyorum.”
+
+Özellikle backend / C++ / sistem mühendisliği / embedded alanlarında CV’ne +5 puan ekler.
+
+🛠️ 3. Kimler Bu Projeyi Kullanabilir / Uyarlayabilir?
+Sistem yöneticileri → Trafik yoğunluğunu analiz eder
+
+DevOps mühendisleri → Anormal davranışları log’dan tespit eder
+
+Web geliştiricileri → En popüler sayfaları görür, hangi endpoint’lerde hata olmuş anlar
+
+Siber güvenlik uzmanları → Şüpheli IP’leri tespit edebilir (örn: brute-force girişimlerine bakarak)
+
+Senin yazacağın sistem bu tür tüm meslek gruplarına temel teşkil edebilir.
+
+🚀 4. Sen Ne Kazanacaksın?
+Alan	Kazanım
+C++ Pratiği	fstream, string, map, thread, mutex kullanımı
+Concurrency Bilgisi	Thread başlatma, senkronizasyon, race condition önleme
+Performans Bilinci	Thread sayısına göre hız karşılaştırması
+Gerçek veri işleme	Log formatı parsing, string işlemleri, veri istatistiği
+Kariyer Gelişimi	Güçlü bir CV projesi, teknik mülakatlarda anlatılabilir deneyim
+
+💡 Kapanış:
+Bu proje, işletim sistemleri bilginle sistem seviyesinde üretken olmanın kapısını açıyor.
+Hem öğreniyorsun, hem kendini gösteriyorsun, hem de gerçek dünyaya hazırlanıyorsun.
