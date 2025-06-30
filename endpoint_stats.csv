@@ -1,0 +1,8 @@
+Endpoint,Count
+/api/data,685
+/api/status,735
+/home,725
+/login,709
+/logout,725
+/profile,680
+/settings,741
